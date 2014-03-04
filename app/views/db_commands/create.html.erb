@@ -1,0 +1,31 @@
+<% provide(:title, 'Result') %>
+<div class="center hero-unit">
+    <h1>Create Database SQLコマンド 作成くん：結果</h1>
+</div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+<pre>        -- Create database
+        CREATE DATABASE <%= @db_commands.db_name %> CHARACTER SET utf8;
+        GRANT ALL ON <%= @db_commands.db_name %>.* TO '<%= @db_commands.db_user %>'@localhost IDENTIFIED BY '<%= @db_commands.db_pass %>';
+        FLUSH PRIVILEGES;
+
+        -- Reference:
+        -- CREATE TABLE tbl_name(
+        -- Id MEDIUMINT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+        -- col1 VARCHAR ( 256 ) default NULL,
+        -- col2 TEXT,
+        -- col3 tinyint(1) default 0,
+        -- col4 DATETIME);
+
+		-- Insert INSERT INTO tbl_name (col1,col2) VALUES(15,col1*2);
+        -- Delete DELETE FROM tbl_name WHERE user = 'jcole'
+        -- Update UPDATE tbl_name SET col1 = col1 + 1;
+        -- Update UPDATE tbl_name SET col1 = col1 + 1;
+
+        -- ALTER TABLE tbl_name ADD col1;
+        -- ALTER TABLE tbl_name CHANGE col1;
+        -- ALTER TABLE tbl_name DROP col1;
+		</pre>
+    </div>
+</div>
