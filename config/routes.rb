@@ -1,6 +1,6 @@
 GeneratorCLIDb::Application.routes.draw do
   resources :db_commands
-  root :to=> 'db_commands#home'
+  root :to=> 'db_commands#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

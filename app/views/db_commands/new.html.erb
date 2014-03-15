@@ -1,0 +1,35 @@
+<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+    <h1>Create Database SQL 作成くん</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@db_commands) do |f| %>
+            <fieldset>
+                <%= render 'shared/error_messages', :object => f.object %>
+                    <%= f.label 'データベースの名前 *' %>
+                    <p class="help-block">ex: db_1gou</p>
+                    <%= f.text_field :db_name %>
+                    <%= f.label 'データベースのユーザ *' %>
+                    <p class="help-block">ex: john</p>
+                    <%= f.text_field :db_user %>
+                    <%= f.label 'データベースのパスワード *' %>
+                    <p class="help-block">ex: Vt7ZgHzK</p>
+                    <%= f.text_field :db_pass %>
+                <!--<%= f.label 'オプション' %>-->
+                <!--<%= f.text_area :option %>-->
+                <%= f.submit '送信', :class => 'btn btn-large btn-primary' %>
+            </fieldset>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- generator -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:250px;height:250px"
+                 data-ad-client="ca-pub-6004984342861741"
+                 data-ad-slot="7259625202"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        <% end %>
+    </div>
+</div>
