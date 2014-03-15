@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  errors:
+    messages:
+      blank: "を入力してください（ﾟーﾟ;）"
