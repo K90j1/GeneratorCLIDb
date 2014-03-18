@@ -17,3 +17,5 @@
 /vendor
 /doc
 /.idea
+.DS_Store
+GeneratorCLIDb.iml

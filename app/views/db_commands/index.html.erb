@@ -47,6 +47,7 @@ ALTER TABLE tbl_name DROP col1;
                 <h2>PostgreSQL コマンド</h2>
 
 <pre><code>-- データベースの作成
+psql -d template1 -U postgres
 CREATE USER <%= @db_commands.db_user %> WITH PASSWORD '<%= @db_commands.db_pass %>';
 CREATE DATABASE <%= @db_commands.db_name %> ENCODING 'UTF8';
 GRANT ALL PRIVILEGES ON DATABASE <%= @db_commands.db_name %> TO <%= @db_commands.db_user %>;
